@@ -14,7 +14,6 @@ test ('Authentication Pop up handle', async()=>{
     const aftermessage:Locator = await page.locator("//p");
     console.log(await aftermessage.innerText());
 
-
 });
 
 function createAuthHeader(username:any , password:any){
