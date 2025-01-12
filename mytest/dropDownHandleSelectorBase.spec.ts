@@ -24,6 +24,10 @@ test('Drop Down Handle using Selector', async()=>{
     for (const e of alloptions){
         const text = await e.textContent();
         console.log(text);
+        if (text === "India"){
+            await page.selectOption(countrySelector, {label : text});
+            break;
+        }
     }
 
 
